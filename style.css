@@ -1,0 +1,30 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* 1. Header Styling */
+header {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.developer-badge {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+/* 2. Search Box */
+.search-box {
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+}
