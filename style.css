@@ -111,3 +111,25 @@ header {
 #show-all-btn:hover {
   background-color: #e05656;
 }
+
+footer {
+  background-color: #212529;
+  color: #aaa;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.student-info-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: inline-block;
+}
+
+footer a {
+  color: #ff8e53;
+  text-decoration: none;
+}

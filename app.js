@@ -84,3 +84,10 @@ function displayMeals(showAll) {
 function showAllMeals() {
   displayMeals(true);
 }
+
+// Pressing "Enter" in the search box triggers searchMeals()
+document.getElementById('search-input').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    searchMeals();
+  }
+});
