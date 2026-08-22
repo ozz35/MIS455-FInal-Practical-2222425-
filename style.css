@@ -28,3 +28,70 @@ header {
   max-width: 600px;
   margin: 20px auto 0 auto;
 }
+
+/* Card Box */
+.meal-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.meal-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.meal-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-id-badge {
+  background-color: #343a40;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+.meal-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.meal-category {
+  color: #ff6b6b;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Scrollable box so long recipe instructions don't ruin card height */
+.instructions-box {
+  background-color: #fcfcfc;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: auto;
+}

@@ -38,6 +38,25 @@
     </div>
   </header>
 
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="container my-5" id="main-content">
+    
+    <!-- Status & Results Message -->
+    <div id="status-message" class="text-center mb-4">
+      <p class="text-muted fs-5">Enter a meal name above and click Search to see delicious recipes.</p>
+    </div>
+
+    <!-- Meal Cards Container (Grid) -->
+    <div id="meals-container" class="row g-4">
+      <!-- Dynamic Meal Cards will appear here via JavaScript -->
+    </div>
+
+    <!-- "SHOW ALL" Button Container -->
+    <div id="show-all-container" class="text-center mt-5" style="display: none;">
+      <button id="show-all-btn" onclick="showAllMeals()">SHOW ALL</button>
+    </div>
+
+  </main>
   <script src="app.js"></script>
 </body>
 </html>

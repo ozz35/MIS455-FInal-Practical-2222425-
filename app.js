@@ -21,3 +21,37 @@ function searchMeals() {
       allMeals = data.meals;
     });
 }
+
+function displayMeals(showAll) {
+  const mealsContainer = document.getElementById('meals-container');
+  mealsContainer.innerHTML = ""; // Clear previous
+
+  // Requirement 5: Show first 5 only
+  const mealsToDisplay = allMeals.slice(0, 5);
+
+  // Requirement 4: Loop and build each card
+  mealsToDisplay.forEach(meal => {
+    const mealId = meal.idMeal;
+    const mealName = meal.strMeal;
+    const mealImage = meal.strMealThumb;
+    const mealCategory = meal.strCategory ? meal.strCategory : "Delicious Meal";
+    const instructions = meal.strInstructions ? meal.strInstructions : "No instructions.";
+
+    const cardHTML = `
+      <div class="col-md-6 col-lg-4">
+        <div class="meal-card shadow-sm">
+          <img src="${mealImage}" alt="${mealName}" class="meal-img">
+          <div class="meal-body">
+            <span class="meal-id-badge">ID: ${mealId}</span>
+            <h5 class="meal-title">${mealName}</h5>
+            <p class="meal-category">${mealCategory}</p>
+            <label class="fw-bold text-secondary small mb-1">Cooking Instructions:</label>
+            <div class="instructions-box">${instructions}</div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    mealsContainer.innerHTML += cardHTML;
+  });
+}
