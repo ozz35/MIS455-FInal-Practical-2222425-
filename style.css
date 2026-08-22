@@ -1,3 +1,9 @@
+/* ==========================================
+   Meal Finder Stylesheet (style.css)
+   Course: MIS455 Final Assessment
+   Author: MD. Ozaire Wasit (2222425)
+   ========================================== */
+
 body {
   background-color: #f8f9fa;
   font-family: Arial, sans-serif;
@@ -29,7 +35,7 @@ header {
   margin: 20px auto 0 auto;
 }
 
-/* Card Box */
+/* 3. Meal Card Styling */
 .meal-card {
   border: 1px solid #e0e0e0;
   border-radius: 12px;
@@ -60,6 +66,7 @@ header {
 }
 
 .meal-id-badge {
+  display: inline-block;
   background-color: #343a40;
   color: white;
   font-size: 12px;
@@ -74,15 +81,16 @@ header {
   font-size: 20px;
   font-weight: bold;
   color: #333;
+  margin-bottom: 5px;
 }
 
 .meal-category {
   color: #ff6b6b;
   font-weight: 600;
   font-size: 14px;
+  margin-bottom: 12px;
 }
 
-/* Scrollable box so long recipe instructions don't ruin card height */
 .instructions-box {
   background-color: #fcfcfc;
   border: 1px solid #eee;
@@ -96,6 +104,7 @@ header {
   margin-top: auto;
 }
 
+/* 4. Show All Button */
 #show-all-btn {
   background-color: #ff6b6b;
   color: white;
@@ -112,6 +121,7 @@ header {
   background-color: #e05656;
 }
 
+/* 5. Footer Styling */
 footer {
   background-color: #212529;
   color: #aaa;
@@ -132,4 +142,8 @@ footer {
 footer a {
   color: #ff8e53;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
