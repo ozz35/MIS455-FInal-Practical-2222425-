@@ -95,3 +95,19 @@ header {
   overflow-y: auto;
   margin-top: auto;
 }
+
+#show-all-btn {
+  background-color: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+  cursor: pointer;
+}
+
+#show-all-btn:hover {
+  background-color: #e05656;
+}

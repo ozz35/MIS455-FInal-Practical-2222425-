@@ -55,3 +55,32 @@ function displayMeals(showAll) {
     mealsContainer.innerHTML += cardHTML;
   });
 }
+
+function displayMeals(showAll) {
+  const mealsContainer = document.getElementById('meals-container');
+  const showAllContainer = document.getElementById('show-all-container');
+  mealsContainer.innerHTML = "";
+
+  // If showAll is true, show all; otherwise show only first 5
+  let mealsToDisplay;
+  if (showAll === true) {
+    mealsToDisplay = allMeals;
+    showAllContainer.style.display = "none"; // Hide button once all are shown
+  } else {
+    mealsToDisplay = allMeals.slice(0, 5);
+
+    // If more than 5 results exist, show the button
+    if (allMeals.length > 5) {
+      showAllContainer.style.display = "block";
+    } else {
+      showAllContainer.style.display = "none";
+    }
+  }
+
+  // Loop & render cards... (same loop as Step 2B)
+}
+
+// Function called when SHOW ALL is clicked
+function showAllMeals() {
+  displayMeals(true);
+}
